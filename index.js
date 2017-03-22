@@ -29,7 +29,7 @@ class LaravelBladeParser
                 oneLineSection: /\@section\([\'\"]([^\'\"]*)[\'\"]?\s*\,\s*[\'\"]?([^\"\'\)]*)[\'\"]?\)/gi,
 				multiLineSection: /\@section\(\s*[\'\"]?([^\'\"]*)[\'\"]?\s*\)((?:(?!\@stop|\@endsection).*\s*)*)*(?:\@stop|\@endsection)/gi,
 
-                links: /->links\((?:[\'\"])(.*)(?:[\'\"])\)/gi
+                links: /->links\((?:[\'\"])(.*)(?:[\'\"])[\,\)]/gi
             },
             encoding: 'utf8'
         };
